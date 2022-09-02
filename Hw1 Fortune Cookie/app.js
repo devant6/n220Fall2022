@@ -9,32 +9,24 @@ class Fortune{
         var counter = Math.floor(Math.random() * 3 + 1);
         console.log(counter);
         if (this.cookie == true){
-            //console.log(this.prediction1);
-            //console.log(document.getElementById("fortuneText").innerHTML);
+        
            if(counter == 1){
                 document.getElementById("fortuneText").innerHTML = this.prediction1;
                 this.cookie = false;
-                //counter++;
+                
                 
            }
            else if(counter == 2){
                 document.getElementById("fortuneText").innerHTML = this.prediction2;
                 this.cookie = false;
-                //counter++;
+             
             }
            else if(counter == 3){
                 document.getElementById("fortuneText").innerHTML = this.prediction3;
                 this.cookie = false;
-                //counter++;
+              
             }
-           //else {
-              //  if(counter==0){
-                //    console.log("bad");
-                //    document.getElementById("fortuneText").innerHTML = this.prediction1;
-                 //   this.cookie = false;
-                  //  counter++;
-                //}
-            //}
+           
            
         }
         else{

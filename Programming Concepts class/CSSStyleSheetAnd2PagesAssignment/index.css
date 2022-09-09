@@ -1,0 +1,17 @@
+body{
+background-color: rgb(3, 102, 107);
+color: lightcyan;
+font-family: verdana, arial, sans-serif; 
+}
+p{
+    text-align: center;
+}
+.catText{
+    background-color: aqua;
+    color:blueviolet;
+    font-family: 'Times New Roman', Times, serif;
+}
+table{
+    background-color: blue;
+    color: black;
+}

@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App() { //npx create-react-app my-app
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" /> 
+        <img src={logo} className="App-log" alt="logo" /> 
         <p>
           Hey
         </p>

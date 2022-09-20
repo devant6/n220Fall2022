@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts and innerHTML attributes assignment</title>
+</head>
+<body style="background-color: skyblue;">
+    <input type="button" style="background-color: blue; color: aqua;" value="Get a quote here!" onclick="document.getElementById('authorName').innerHTML='Christopher Paolini'; alert('Books are my friends, my companions. They make me laugh and cry and find meaning in life.'); document.getElementById('cover').src = 'images/Eragon_book_cover.png';">
+    <input type="button" style="background-color: pink; color: purple;" value="Here's another quote!" onclick="document.getElementById('authorName').innerHTML='Tamora Pierce'; alert('I am not wise, but I can always learn.'); document.getElementById('cover').src = 'images/Alanna_cover.jpg'">
+    <input type="button" style="background-color: lightgreen; color: darkblue;" value="Yet another quote here!" onclick="document.getElementById('authorName').innerHTML='Veronica Ruth'; alert('Becoming fearless isn’t the point. That’s impossible. It’s learning how to control your fear, and how to be free from it.'); document.getElementById('cover').src = 'images/Divergent_cover.jpg'">
+    <h1 id = "authorName" style="text-align: left; color: blue;"><i></i></h1>
+    <img src="" id = "cover" style="height:300px; width: 200px;">
+    <input type="button" style="background-color: azure; color: blueviolet;" value="Who made this?" onclick="alert('Devan Tackett')"
+</body>
+</html>

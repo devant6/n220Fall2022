@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Assignment</title>
+</head>
+<body style="background-color:  aqua";>
+    <h1 style="text-align: center; color: darkblue;">Create a story, by Devan Tackett</h1>
+    <div style="color:blue">
+        <label>Creature:</label>
+        <input type="text" id="creature" size="25">
+        <label>Emotion:</label>
+        <input type="text" id="emotion" size="25">
+        <label>Item:</label>
+        <input type="text" id="item" size="25">
+        <label>Weather:</label>
+        <input type="text" id="weather" size="25">
+        <label>Place:</label>
+        <input type="text" id="place" size="25">
+        <label>Season:</label>
+        <input type="text" id="season" size="25">
+        <label>Second Emotion:</label>
+        <input type="text" id="emotion2" size="25">
+        <label>Action ending with "ed":</label>
+        <input type="text" id="action" size="25">
+        <label>Action ending with "ing":</label>
+        <input type="text" id="action2" size="25">
+    </div>
+    <input style="background-color:blue; color: aquamarine;" type="button" id="done" value="Click here to generate your letter!"
+    onclick="creature = document.getElementById('creature').value; 
+    emotion = document.getElementById('emotion').value;
+    item = document.getElementById('item').value;
+    weather = document.getElementById('weather').value;
+    place = document.getElementById('place').value;
+    season = document.getElementById('season').value;
+    emotion2 = document.getElementById('emotion2').value;
+    action = document.getElementById('action').value;
+    action2 = document.getElementById('action2').value;
+    document.getElementById('out1').innerHTML = 'The story of Hallia, the '+ creature + ': <br> There once was a ' + creature + ' named Hallia. They feel '+ emotion + ', because they\'re the last ' + creature + ' left. They live in a ' + place + ', which also makes them feel '+ emotion + '. One day they find a ' + item + ', which has magical powers. This '+ item + ' causes ' + weather + ' to happen, even in ' + season + '. This makes Hallia stop feeling ' + emotion + '.';
+    document.getElementById('out2').innerHTML = 'One day, Hallia met another '+ creature + '. They felt '+ emotion2 + ' at the sight of the other ' + creature + ' because Hallia thought they were the last one! Hallia then ' + action + ' the other ' + creature + '. This caused the other creature to retaliate by ' + action2 + ' Hallia.'"
+    >
+    <div>
+        <hr style="background-color:darkblue; color: darkblue;">
+        <p id = "out1"></p>
+        <p id= "out2"></p>
+        
+    </div>
+</body>
+</html>

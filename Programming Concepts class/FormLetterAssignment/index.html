@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Letters Assignment</title>
+</head>
+<body>
+    <div>
+        <label>Name:</label>
+        <input type="text" id="name" size="25">
+        <label>Activity:</label>
+        <input type="text" id="activity" size="25">
+        <label>Date:</label>
+        <input type="text" id="date" size="25">
+        <label>Time:</label>
+        <input type="text" id="time" size="25">
+        <label>Place:</label>
+        <input type="text" id="place" size="25">
+    </div>
+    <input type="button" id="done" value="Click here to generate your letter!"
+    onclick="document.getElementById('out1').innerHTML = 'Formal: <br> Dear <i>' + document.getElementById('name').value + '</i>,<br> I would love for you to join me for ' + document.getElementById('activity').value + '. The location is ' + document.getElementById('place').value + '. It takes place <b>' + document.getElementById('date').value + '</b> , <b>' + document.getElementById('time').value + '</b>. Please respond if you will come. <br> <i>Sincerly, Devan</i>'
+    document.getElementById('out2').innerHTML = 'Casual: <br> Hey <i>' + document.getElementById('name').value + '</i>!<br> Do you want to come with me to ' + document.getElementById('activity').value + '? It\'s at ' + document.getElementById('place').value + ' if you want to come. It\'s gonna start <b>' + document.getElementById('date').value + '</b> , <b>' + document.getElementById('time').value + '</b>. You in?'"
+    >
+    <div>
+        <p id="out1"></p>
+        <p id="out2"></p>
+    </div>
+</body>
+</html>

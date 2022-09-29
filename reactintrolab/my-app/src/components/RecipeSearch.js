@@ -1,6 +1,5 @@
 import "./../styles.css";
 import React from "react";
-
 export default class RecipeSearch extends React.Component{
     state = {
         recipes: [
